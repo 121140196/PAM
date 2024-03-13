@@ -1,0 +1,30 @@
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class DisplayDataActivity extends AppCompatActivity {
+
+    TextView textViewNama, textViewJenisKelamin, textViewUmur, textViewAsal;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_display_data);
+
+        textViewNama = findViewById(R.id.textViewName);
+        textViewJenisKelamin = findViewById(R.id.textViewGender);
+        textViewUmur = findViewById(R.id.textViewSkills);
+        textViewAsal = findViewById(R.id.textViewCountry);
+
+        Intent intent = getIntent();
+        String nama = intent.getStringExtra("NAMA");
+        String jenis_kelamin = intent.getStringExtra("JENIS KELAMIN");
+        String umur = intent.getStringExtra("UMUR");
+        String asal = intent.getStringExtra("ASAL");
+
+        textViewNama.setText("Name: " + nama);
+        textViewJenisKelamin.setText("Jenis Kelamin: " + jenis_kelamin);
+        textViewUmur.setText("Umur: " + umur;
+        textViewAsal.setText("Asal: " + asal);
+    }
+}
