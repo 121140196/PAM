@@ -1,0 +1,17 @@
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Primary Button"
+    style="@style/ButtonPrimary" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Success Button"
+    style="@style/ButtonSuccess" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Warning Button"
+    style="@style/ButtonWarning" />
