@@ -1,0 +1,2 @@
+val uri = Uri.parse("https://example.com/fragmentA")
+findNavController().navigate(uri)
