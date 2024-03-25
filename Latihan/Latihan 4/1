@@ -1,0 +1,2 @@
+// Navigasi dari FragmentA ke FragmentB
+findNavController().navigate(R.id.action_fragmentA_to_fragmentB)
